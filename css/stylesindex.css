@@ -31,7 +31,13 @@
 }
 .knap {
     grid-area: b;
-    background-color: pink;
+    background-color: red;
     margin: auto;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    text-align: center;
 
 }
