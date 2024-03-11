@@ -40,7 +40,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 0px 50px 50px 0px;
 }
 .knap p{
     color: white;
 }
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7a7a7a;
+    color: white;
+    padding: 20px;
+}
+
+
