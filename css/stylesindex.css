@@ -11,32 +11,27 @@
     "p b" ;
 }
 .frontpicture {
-
-float: left;
-margin-right: 20px; /* Juster marginen mellem billedet og teksten */
-width: 500px; /* Gør billedet responsivt */
-grid-area: p;
-margin: auto;
+    grid-area: p;
+    float: left;
+    margin-right: 20px; /* Juster marginen mellem billedet og teksten */
+    width: 500px; /* Gør billedet responsivt */
+    margin: auto;
 }
 
 .hline {
+    grid-area:t ;
     display: flex;
     align-items: center;
     text-align: center;
     margin: 5px;
-    grid-area:t ;
 }
 .text {
-    margin: 5px;
     grid-area:t2 ;
+    margin: 5px;
 }
 .knap {
-    background-color: pink;
-    width: 50px;
-    margin-left: 40%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     grid-area: b;
+    background-color: pink;
+    margin: auto;
+
 }
