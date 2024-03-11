@@ -48,13 +48,27 @@
 .knap p{
     color: white;
 }
-#footer {
+footer {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    background-color: #7a7a7a;
-    color: white;
+    background-color: #696969;
     padding: 20px;
+}
+footer div{
+    justify-content: center;
+}
+footer p{
+    color: white;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: red;
+}
+footer i{
+    color: white;
+    scale: 200%;
+    margin: 0px 18px;
 }
 
 
