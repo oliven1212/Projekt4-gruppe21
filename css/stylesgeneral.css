@@ -9,35 +9,45 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
-header{
-    background-color: #dbd5d5;
+body, header, footer{
     margin: 0px;
     padding: 0px;
+}
+header{
+    background-color: #dbd5d5;
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    height: 120px;
 }
 footer{
     background-color: #989598;
 }
-body{
-    margin: 0px;
-    padding: 0px;
-}
-nav{
+.highlight{
+    width: 15%;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
-nav a{
-    background-color: white;
-    border-style: solid;
-    padding: 10px;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: red;
-    text-decoration: none;
+.highlight:hover{
+    margin-top: 5px;
+    border-bottom: 5px solid red;
+}
+.highlight p{
     text-align: center;
-    
+    font-size: 30px;
 }
-nav a:hover{
-    background-color: whitesmoke;
+.headerpicture {
+    width: 15%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 0px;
+    padding: 10px 0px;
+}
+.headerpicture img{
+    height: 100px;
+
 }
