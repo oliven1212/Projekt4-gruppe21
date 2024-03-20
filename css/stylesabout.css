@@ -5,8 +5,9 @@
     grid-gap: 3px;
 
     grid-template-areas: 
-    "t1 t1"
+    "h1 h1"
     "p pc"
+    "h2 h2"
     "p2 b" ;
  
 }
@@ -19,6 +20,10 @@
      grid-area: p;
      width: 90%;
 }
-h1{
-    color: red;
+.recycletext{
+    grid-area: p2;
+}
+.readmore{
+    grid-area: b;
+    background-color: red;
 }
