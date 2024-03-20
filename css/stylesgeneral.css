@@ -10,10 +10,13 @@ h3{
     color: white;
     margin: 0px;
 }
+h1,h2,h3{
+    letter-spacing: -1.5px;
+}
 p{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: #585e57;
 }
 
 html,body{
@@ -21,13 +24,14 @@ html,body{
     margin: 0px;
 }
 body{
+    background-color: #fff;
     display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows:  repeat(120px auto 150px);
-    grid-gap: 3px;
+    grid-template-rows:  repeat(120px 138px auto 150px);
 
     grid-template-areas: 
     "header"
+    "banner"
     "main"
     "footer";
 }
@@ -35,13 +39,26 @@ main{
     grid-area: main;
     margin: 20px 3%;
 }
+#banner{
+    grid-area: banner;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    background-color: #fe9016;
+    box-shadow: 0px 5px 10px #fe9016;
+}
+#banner img{
+    width: 100%;
+}
 header{
     grid-area: header;
-    background-color: #B4B8AB;
+    background-color: #6f4e37;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 120px;
+    box-shadow: 0px 3px 5px #6f4e37;
+
 }
 .highlight{
     width: 15%;
@@ -57,6 +74,7 @@ header{
 .highlight p{
     text-align: center;
     font-size: 30px;
+    color: black;
 }
 .headerpicture {
     width: 15%;
