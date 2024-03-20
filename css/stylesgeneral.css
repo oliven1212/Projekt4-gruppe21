@@ -27,7 +27,7 @@ body{
 }
 main{
     grid-area: main;
-    margin: 20px;
+    margin: 20px 3%;
 }
 header{
     grid-area: header;
