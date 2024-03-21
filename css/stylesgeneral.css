@@ -27,7 +27,7 @@ body{
     background-color: #fff;
     display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows:  repeat(120px 143px auto 150px);
+    grid-template-rows:  (120px 143px auto 150px);
 
     grid-template-areas: 
     "header"
