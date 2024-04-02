@@ -14,25 +14,35 @@ label, button{
     background-color: #fff;
     display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows:  repeat(2, auto);
+    grid-template-rows:  200px 100px;
 
     grid-template-areas: 
     "img"
     "text";
     width: 20%;
     position: relative;
+    overflow: hidden;
+    
 }
 .box img{
-width: 100%;
+    grid-area: img;
+    width: 100%;
+    max-width: 100%;
+    
+/* fix stretching    */
+}
+.box .img-text{
+    grid-area: text;
 }
 .box .cover{
     grid-area: img,text;
-    background-color: rgba(0, 255, 255, 0.607);
-    width: 0%;
+    background-color: rgba(0, 255, 255, 0.715);
+    margin-left: 100%;
+    width: 100%;
     height: 100%;
     position:absolute;
-    transition: width 2s;
+    transition: margin-left 1.2s ease;
 }
 .box:hover .cover{
-    width: 100%;
+    margin-left: 0%;
 }
