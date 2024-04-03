@@ -48,3 +48,24 @@
 .knap p{
     color: white;
 }
+
+.burperpic {
+    width: 15%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 0px;
+    padding: 10px 0px;
+}
+.burperpic img{
+    height: 100px;
+
+}
+.burgeritem{
+    background-color: black;
+    text-decoration: none;
+}
+.burgeritem:hover{
+    background-color: gray;
+}
