@@ -6,42 +6,61 @@ h1{
     justify-content: flex-end;
 
 }
+h3{
+    color:black;
+}
 label, button{
     font-size: 20px;
     padding: 5px;
+}
+#galleri{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .box {
     background-color: #fff;
     display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows:  200px 100px;
-
+    grid-template-rows:  200px auto;
     grid-template-areas: 
     "img"
     "text";
     width: 20%;
     position: relative;
     overflow: hidden;
-    
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    padding: 8px;
+    margin: 10px 20px;
+    box-shadow: 3px 3px 3px #0000003e;
+
 }
 .box img{
     grid-area: img;
-    width: 100%;
+    width: auto;
     max-width: 100%;
-    
-/* fix stretching    */
+    height: 100%;
+    margin: 0px auto;
 }
 .box .img-text{
     grid-area: text;
+    margin-top: 5px;
+    background-color: white;
 }
 .box .cover{
     grid-area: img,text;
-    background-color: rgba(0, 255, 255, 0.715);
+    background-color: #fe9216cb;
+    padding: 10px;
     margin-left: 100%;
     width: 100%;
     height: 100%;
     position:absolute;
     transition: margin-left 1.2s ease;
+}
+.box .cover p, .box .cover h3 {
+color: white;
 }
 .box:hover .cover{
     margin-left: 0%;
