@@ -25,28 +25,34 @@
             <img class="frontpicture"  src="pictures/index/Ghost.webp" alt="Beskrivelse af billedet">
             <a href="about.html" class="knap"><h3>Lær om genbrug</h3></a>
         </div>
-        <nav class="navbar"></nav>
-        <a href="#" class="nav-branding">dev.</a>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Forside</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Indsats</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Events</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Om</a>
-            </li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-
+        <nav class="navigation">
+            <!--**menu-btn*******-->
+            <!--Label bruges til at oprette en formular, som brugeren kan trykke på.-->
+            <!--Når LABEL bruges sammen med input bruger man "for" til at forbinde formularen med inputtet "id" -->
+            <!--Dette gør det muligt for brugere at klikke på etiketten for at aktivere eller fokusere det tilknyttede inputfelt. -->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <!--**logo***********-->
+            <a href="#" class="logo">
+                J
+            </a>
+            <!--**menu***********-->
+            <ul class="menu">
+                <li><a href="#main">Forside</a></li>
+                <li><a href="#about-me">Om mig</a></li>
+                <li><a href="#our-services">Kompetencer</a></li>
+                <li><a href="#portfolio">Projekter</a></li>
+                <li><a href="#contact">Kontakt mig</a></li>
+            </ul>
+            <!--**contact-btn****-->
+            <div class="nav-social">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </nav><!--end-nav-->
         </div>
 
 
