@@ -62,9 +62,17 @@
     height: 100px;
 
 }
+.burger{
+    display: flex;
+    flex-flow:column;
+}
 .burgeritem{
+    width: 50%;
+    margin-left: 50%;
     background-color: black;
+    text-align: end;
     text-decoration: none;
+    padding: 10px;
 }
 .burgeritem:hover{
     background-color: gray;
