@@ -62,11 +62,12 @@
 
 
 .mapbanner {
-    height: 500px;
-    width: 500px;
-    background:wheat url("bouncy.png") 0 0 no-repeat;
+    height: 338px;
+    width: 1235px;
+    background: url("pictures/index/Fulde_Animation.png") 0 0 no-repeat;
+    animation: bannermap 3s steps(15) infinite;
 }
 @keyframes bannermap {
     0%{background-position: 0px;}
-    100%{background-position: -7000px;}
+    100%{background-position: -18525px;}
 }
