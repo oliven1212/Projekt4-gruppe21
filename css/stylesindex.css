@@ -10,7 +10,7 @@
     "p t2"
     "p b" ;
 }
-.frontpicture {
+.frontvideo {
     grid-area: p;
     float: left;
     margin-right: 20px; /* Juster marginen mellem billedet og teksten */
@@ -48,16 +48,31 @@
 .knap p{
     color: white;
 }
+
+
 .burger {
     background-color: #00454e; /* Baggrundsfarve til burger-menu */
     padding: 10px;
     border-radius: 5px;
+    margin-left: 55%;
+    width: 40%;
+}
+#header .navbarbutton{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    scale: 2;
 }
 
 .burperpic img {
     height: 40px; /* Juster logoets størrelse */
 }
-
+.burger a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: end;
+}
 .fa-bars {
     color: #f5ebd8; /* Farve på hamburger-menu-ikonet */
 }
