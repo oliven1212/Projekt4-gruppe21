@@ -3,12 +3,23 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows:  repeat(3, auto);
-    grid-gap: 3px;
+    grid-gap: 20px;
 
     grid-template-areas: 
     "p t"
     "p t2"
     "p b" ;
+}
+@media(max-width: 1300px){
+    .container {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows:  repeat(4, auto);
+        grid-template-areas: 
+        "p"
+        "t"
+        "t2"
+        "b" ;
+    }
 }
 .frontvideo {
     grid-area: p;
@@ -50,42 +61,3 @@
 }
 
 
-.burger {
-    background-color: #00454e; /* Baggrundsfarve til burger-menu */
-    padding: 10px;
-    border-radius: 5px;
-    margin-left: 55%;
-    width: 40%;
-}
-#header .navbarbutton{
-    display: block;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    scale: 2;
-}
-
-.burperpic img {
-    height: 40px; /* Juster logoets størrelse */
-}
-.burger a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: end;
-}
-.fa-bars {
-    color: #f5ebd8; /* Farve på hamburger-menu-ikonet */
-}
-
-.burgeritem {
-    color: #f5ebd8; /* Farve på menu-elementer */
-    text-decoration: none;
-    display: block;
-    padding: 10px 0;
-    transition: background-color 0.3s ease;
-}
-
-
-.burgeritem:hover {
-    background-color: #393D3F; /* Farveændring ved hover */
-}

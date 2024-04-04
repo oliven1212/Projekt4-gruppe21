@@ -112,3 +112,49 @@ footer i{
     scale: 200%;
     margin: 0px 18px;
 }
+
+.burger {
+    display:block;
+    position: absolute;
+    background-color: #00454e;
+    padding: 10px;
+    border-radius: 5px;
+    right: 0px;
+    top: 120px;
+
+}
+#header .navbarbutton{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    scale: 2;
+}
+
+ #header .burperpic img {
+    display: block;
+    height: 80px;
+}
+.burger a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: end;
+}
+.fa-bars {
+    color: #f5ebd8; /* Farve på hamburger-menu-ikonet */
+    margin-top: 15px;
+}
+
+.burgeritem {
+    background-color: #00454e; /* Baggrundsfarve til burger-menu */
+    color: #f5ebd8; /* Farve på menu-elementer */
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.burgeritem:hover {
+    background-color: #393D3F; /* Farveændring ved hover */
+}

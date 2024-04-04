@@ -7,13 +7,24 @@ function pcheader(){
 }
 function phoneheader(){  
     document.getElementById("header").innerHTML = '<a href="index.html" class="burperpic"><img src="pictures/general/logo.png" alt="logo"></a>';
-    document.getElementById("header").innerHTML+= '<a href="javascript:void(0);" onclick="onresize()" class="navbarbutton"><i class="fa fa-bars"></i></a>';
+    document.getElementById("header").innerHTML+= '<a href="javascript:void(0);" onclick="burgershow()" class="navbarbutton"><i class="fa fa-bars"></i></a>';
 
+}
+temp = true;
+
+function burgershow(){
+    if(temp){
+    temp = false;
+    document.getElementById("header").innerHTML+= '<div class="burger"><a href="index.html" class="burgeritem">Forside</a><a href="effort.html" class="burgeritem">Indsats</a><a href="events.html" class="burgeritem">Begivenheder</a><a href="about.html" class="burgeritem">Om os</a></div>';
+    }else{
+        temp = true;
+        phoneheader();
+    }
 }
 
 function onresize () {
     console.log(window.innerWidth);
-    if(window.innerWidth > 1500){
+    if(window.innerWidth > 1300){
         pcheader();
     }else{
         phoneheader();
