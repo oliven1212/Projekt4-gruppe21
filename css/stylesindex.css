@@ -48,32 +48,29 @@
 .knap p{
     color: white;
 }
-
-.burperpic {
-    width: 15%;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-width: 0px;
-    padding: 10px 0px;
-}
-.burperpic img{
-    height: 100px;
-
-}
-.burger{
-    display: flex;
-    flex-flow:column;
-}
-.burgeritem{
-    width: 50%;
-    margin-left: 50%;
-    background-color: black;
-    text-align: end;
-    text-decoration: none;
+.burger {
+    background-color: #00454e; /* Baggrundsfarve til burger-menu */
     padding: 10px;
+    border-radius: 5px;
 }
-.burgeritem:hover{
-    background-color: gray;
+
+.burperpic img {
+    height: 40px; /* Juster logoets størrelse */
+}
+
+.fa-bars {
+    color: #f5ebd8; /* Farve på hamburger-menu-ikonet */
+}
+
+.burgeritem {
+    color: #f5ebd8; /* Farve på menu-elementer */
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+
+.burgeritem:hover {
+    background-color: #393D3F; /* Farveændring ved hover */
 }
