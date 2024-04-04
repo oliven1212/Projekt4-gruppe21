@@ -3,14 +3,25 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows:  repeat(3, auto);
-    grid-gap: 3px;
+    grid-gap: 20px;
 
     grid-template-areas: 
     "p t"
     "p t2"
     "p b" ;
 }
-.frontpicture {
+@media(max-width: 1300px){
+    .container {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows:  repeat(4, auto);
+        grid-template-areas: 
+        "p"
+        "t"
+        "t2"
+        "b" ;
+    }
+}
+.frontvideo {
     grid-area: p;
     float: left;
     margin-right: 20px; /* Juster marginen mellem billedet og teksten */
@@ -49,31 +60,4 @@
     color: white;
 }
 
-.burperpic {
-    width: 15%;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-width: 0px;
-    padding: 10px 0px;
-}
-.burperpic img{
-    height: 100px;
 
-}
-.burger{
-    display: flex;
-    flex-flow:column;
-}
-.burgeritem{
-    width: 50%;
-    margin-left: 50%;
-    background-color: black;
-    text-align: end;
-    text-decoration: none;
-    padding: 10px;
-}
-.burgeritem:hover{
-    background-color: gray;
-}
