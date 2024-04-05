@@ -64,8 +64,10 @@
 .mapbanner {
     height: 338px;
     width: 1235px;
-    background: url("pictures/index/Fulde_Animation.png") 0 0 no-repeat;
-    animation: bannermap 3s steps(15) infinite;
+    margin: auto;
+    background: url("../pictures/index/Fulde_Animation.png") 0 0 no-repeat;
+    background-image:url('../pictures/index/banneranimation.png');
+    animation: bannermap 2.3s steps(15) infinite;
 }
 @keyframes bannermap {
     0%{background-position: 0px;}
