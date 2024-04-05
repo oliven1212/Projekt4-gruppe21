@@ -3,12 +3,25 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows:  repeat(3, auto);
-    grid-gap: 20px;
+    grid-gap: 0px;
 
     grid-template-areas: 
     "p t"
     "p t2"
     "p b" ;
+}
+.hline {
+    grid-area:t ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    margin-left: 30px;
+}
+.text {
+    grid-area:t2 ;
+    margin: 5px;
+    margin-left: 40px;
 }
 @media(max-width: 1000px){
     .container {
@@ -20,6 +33,10 @@
         "t2"
         "b" ;
     }
+    .text {
+        grid-area:t2 ;
+        margin: 5px;
+    }
 
 }
 .frontvideo {
@@ -28,19 +45,14 @@
     margin-right: 20px; /* Juster marginen mellem billedet og teksten */
     width: 100%; /* Gør billedet responsivt */
     margin: auto;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 5px;
+    border-color: #00454e;
 }
 
-.hline {
-    grid-area:t ;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 5px;
-}
-.text {
-    grid-area:t2 ;
-    margin: 5px;
-}
+
+
 .knap {
     grid-area: b;
     background-color: #E30A0B;
@@ -55,25 +67,34 @@
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 30px;
 }
 .knap p{
     color: white;
 }
+
 .splitline{
-    margin-top: 80px; 
-    width: 70vh; 
-    border-width: 5px;
+    margin: 80px auto;
+    width: 60%; 
+    border-width: 3px;
     border-style: solid;
     border-color: #00454e;
     border-radius: 5px;
 }
 
-.mapbanner {
+.kortcontainer{
+
+}
+.kortcontainer h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.kortcontainer .mapbanner {
     height: 338px;
     width: 1236px;
     margin: auto;
-    margin-top: 100px;
+
     background: url("../pictures/index/animationlarge.png") 0 0 no-repeat;
     animation: bannermapbig 2.3s steps(17) infinite;
 }
@@ -82,7 +103,7 @@
     100%{background-position: -21012px;}
 }
 @media(max-width: 1300px){
-    .mapbanner{
+    .kortcontainer .mapbanner{
         height: 169px;
         width: 618px;
         background: url("../pictures/index/animationmedium.png") 0 0 no-repeat;
@@ -94,7 +115,7 @@
     }
 }
 @media(max-width: 650px){
-    .mapbanner{
+    .kortcontainer .mapbanner{
         height: 84.5px;
         width: 309px;
         background: url("../pictures/index/animationsmall.png") 0 0 no-repeat;
