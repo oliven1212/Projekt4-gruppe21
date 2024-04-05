@@ -61,7 +61,7 @@ header{
     align-items: center;
     justify-content: space-evenly;
     height: 120px;
-    box-shadow: 0px 5px 5px #00454e;
+    width: 100%;
 }
 .highlight{
     width: 15%;
@@ -128,12 +128,12 @@ footer i{
 #header .navbarbutton{
     display: block;
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 3vh;
+    top: 6vh;
     scale: 2;
 }
 
- #header .burperpic img {
+#header .burperpic img {
     display: block;
     height: 80px;
 }
@@ -144,7 +144,6 @@ footer i{
 }
 .fa-bars {
     color: #f5ebd8; /* Farve på hamburger-menu-ikonet */
-    margin-top: 15px;
 }
 
 .burgeritem {

@@ -10,7 +10,7 @@
     "p t2"
     "p b" ;
 }
-@media(max-width: 1300px){
+@media(max-width: 1000px){
     .container {
         grid-template-columns: repeat(1, auto);
         grid-template-rows:  repeat(4, auto);
@@ -20,6 +20,7 @@
         "t2"
         "b" ;
     }
+
 }
 .frontvideo {
     grid-area: p;
@@ -59,17 +60,48 @@
 .knap p{
     color: white;
 }
-
+.splitline{
+    margin-top: 80px; 
+    width: 70vh; 
+    border-width: 5px;
+    border-style: solid;
+    border-color: #00454e;
+    border-radius: 5px;
+}
 
 .mapbanner {
     height: 338px;
-    width: 1235px;
+    width: 1236px;
     margin: auto;
-    background: url("../pictures/index/Fulde_Animation.png") 0 0 no-repeat;
-    background-image:url('../pictures/index/banneranimation.png');
-    animation: bannermap 2.3s steps(15) infinite;
+    margin-top: 100px;
+    background: url("../pictures/index/animationlarge.png") 0 0 no-repeat;
+    animation: bannermapbig 2.3s steps(17) infinite;
 }
-@keyframes bannermap {
+@keyframes bannermapbig {
     0%{background-position: 0px;}
-    100%{background-position: -18525px;}
+    100%{background-position: -21012px;}
+}
+@media(max-width: 1300px){
+    .mapbanner{
+        height: 169px;
+        width: 618px;
+        background: url("../pictures/index/animationmedium.png") 0 0 no-repeat;
+        animation: bannermapmed 2.3s steps(17) infinite;
+    }
+    @keyframes bannermapmed {
+        0%{background-position: 0px;}
+        100%{background-position: -10506px;}
+    }
+}
+@media(max-width: 650px){
+    .mapbanner{
+        height: 84.5px;
+        width: 309px;
+        background: url("../pictures/index/animationsmall.png") 0 0 no-repeat;
+        animation: bannermapsma 2.3s steps(17) infinite;
+    }
+    @keyframes bannermapsma {
+        0%{background-position: 0px;}
+        100%{background-position: -5253px;}
+    }
 }
