@@ -97,14 +97,17 @@ footer {
     grid-area: footer;
     display: flex;
     justify-content: space-around;
-    background-color: #393D3F;
+    background-color: #00454e;
     padding: 20px;
+}
+footer h2{
+    color: #fe9016;
 }
 footer div{
     justify-content: center;
 }
 footer p{
-    color: white;
+    color: white
 }
 footer i{
     color: white;
