@@ -1,3 +1,13 @@
+const firstlocation = ["Frederiksværk pakkecenter"];
+const firstdate = ["17. marts",];
+const firsttime = ["17:32",];
+const secondlocation = ["Kastrup lufthavn"];
+const seconddate = ["27. marts"];
+const secondtime = ["14:40"];
+const thirdlocation = ["Uganda"];
+const thirddate = ["31. marts"];
+const thirdtime = ["10:22"];
+
 function trackShipment() {
     var trackingNumber = document.getElementById('trackingNumber').value;
 
