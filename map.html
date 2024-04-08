@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <title>Forside</title>
     <link rel="icon" href="pictures/general/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <main id="banner"></main>
@@ -17,15 +18,51 @@
     <header id="header"></header>
     <main>
         <div class="container">
-            <h1 class="hline" >Din stil, deres smil</h1>
-            <p class="text">"Din stil, deres smil" er et nyt koncept,
-                der gør det let for unge mellem 20-25 år at donere deres overskydende tøj.
-                Vi placerer grenbrugscontainere ved universiteter og skoler for at opfordre til bæredygtig mode og socialt ansvar.
-                Ved at deltage bidrager du direkte til positiv forandring i lokalsamfundet. Lad os sammen skabe smil gennem din stil og solidaritet.
-                Velkommen til "Din stil, deres smil". Gør en forskel med din tøjdonation i dag!</p>
-            <img class="frontpicture"  src="pictures/index/Ghost.webp" alt="Beskrivelse af billedet">
-            <a href="about.html" class="knap"><h3>Lær om genbrug</h3></a>
+            <h2>Track din container</h2>
+            <input type="text" id="trackingNumber" placeholder="Enter Tracking Number">
+            <button onclick="trackShipment()">Track</button>
+            <div id="status"></div>
+            <!-- Meddelelsescontainer -->
+            <div id="errorMessage" class="error-message"></div>
+    
+        <div id="trackingResult" style="display: none;">
+            <h3>Pakkens Vej</h3>
+            <div class="trackingTimeline">
+                <div class="timelineItem">
+                    <div class="timelineIcon"><i class="fas fa-warehouse"></i></div>
+                    <div class="timelineContent">
+                        <p><strong>Trin 1:</strong> Frederiksværk pakkecenter</p>
+                        <p>17. marts - kl. 17:32</p>
+                        <p>Forsendelsen behandles og sorteres</p>
+                    </div>
+                    <div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <div class="timelineItem">
+                    <div class="timelineIcon"><i class="fas fa-plane"></i></div>
+                    <div class="timelineContent">
+                        <p><strong>Trin 2:</strong> Kastrup lufthavn</p>
+                        <p>27. marts - kl. 14:40</p>
+                        <p>Tøjet er ved gøres klar til flyveturen</p>
+                    </div>
+                    <div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <div class="timelineItem">
+                    <div class="timelineIcon"><i class="fas fa-globe"></i></div>
+                    <div class="timelineContent">
+                        <p><strong>Trin 3:</strong> Uganda</p>
+                        <p>Idag kl. 10:22</p>
+                        <p>Tøjet er noget frem</p>
+                    </div>
+                    <div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
         </div>
+        <div class="satisfactionBox">
+            <h3>Tak for din donation!</h3>
+            <p>Her er et billede af dem, der har fået gavn af dit tøj:</p>
+            <img src="https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/generations/0-89964819-c5b2-4313-a2e6-691fe5a00a40.png" alt="Tilfredse mennesker">
+        </div>
+    
     </main>
     <footer id="footer"></footer>
 </body>
