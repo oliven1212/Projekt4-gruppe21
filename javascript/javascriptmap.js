@@ -1,3 +1,4 @@
+const id = ["12345"];
 const firstlocation = ["Frederiksværk pakkecenter"];
 const firstdate = ["17. marts",];
 const firsttime = ["17:32",];
@@ -31,7 +32,7 @@ function trackShipment() {
     var trackingNumber = document.getElementById('trackingNumber').value;
 
     // Simulere en anmodning til serveren for at få forsendelsesdetaljer
-    if (trackingNumber === '12345') {
+    if (trackingNumber === id[0]) {
         document.getElementById('trackingResult').style.display = 'block';
         // Vis satisfactionBox, når det ønskede sporingsnummer er indtastet
         document.querySelector('.satisfactionBox').style.display = 'block';
