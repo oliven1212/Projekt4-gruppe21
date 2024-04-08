@@ -1,9 +1,13 @@
-.container {
+main h3 {
+    color: black;
+}
+
+main .container {
     text-align: center;
     margin-top: 50px;
 }
 
-input {
+main input {
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -15,7 +19,6 @@ button {
     border: none;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #0056b3;
 }
@@ -60,8 +63,8 @@ button:hover {
     margin: 5px 0;
 }
 
-.satisfactionBox {
-    display: none; /* Skjul boksen som standard */
+#satisfactionBox {
+    display: none;
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 5px;
@@ -69,18 +72,18 @@ button:hover {
     text-align: center;
 }
 
-.satisfactionBox h3 {
+#satisfactionBox h3 {
     margin-bottom: 10px;
 }
 
-.satisfactionBox img {
-    max-width: 100%;
+#satisfactionBox img {
+    max-width: 50%;
     height: auto;
     border-radius: 5px;
     margin-top: 10px;
 }
 
-.error-message {
+#errorMessage {
     display: none;
     background-color: #ffcccc; /* Lyserød baggrundsfarve */
     border: 2px solid #ff4d4d; /* Tykkere rød ramme */

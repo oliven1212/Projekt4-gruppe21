@@ -1,5 +1,5 @@
 const id = [12345,1,2];
-const firstlocation = ["Frederiksværk pakkecenter","Odense pakkecenter","Frederiksværk pakkecenter"];
+const firstlocation = ["Frederiksværk pakkecenter","Odense pakkecenter","Svendborg pakkecenter"];
 const firstdate = ["17. Marts", "13. Maj", "14. September"];
 const firsttime = ["17:32", "14:50","10:50"];
 const secondlocation = ["Kastrup lufthavn","Kastrup lufthavn", "Kastrup lufthavn"];
@@ -10,39 +10,34 @@ const thirddate = ["31. marts", "22. august", "19. maj"];
 const thirdtime = ["10:22", "12:11", "13:53"];
 
 function trackShipment() {
-    var trackingNumber = document.getElementById('trackingNumber').value;
+    for (let i = 0; i < id.length; i++) {
+    //Tjeker om det er et gyldigt id der er blevet givet
+    if (document.getElementById('trackingNumber').value == id[i]){
 
-    // Simulere en forespørgsel til en server for at hente forsendelsesstatus
-    // Dette kan omfatte AJAX-anmodninger eller fetch-API'en i et rigtigt projekt
-    var status = getStatusFromServer(trackingNumber);
+        //Viser hvor langt containeren er på dens rejse
+        document.getElementById('trackingResult').innerHTML = '<h3>Pakkens Vej</h3><br>';
+        document.getElementById('trackingResult').innerHTML += '<div class="trackingTimeline"><div class="timelineItem"><div class="timelineIcon"><i class="fas fa-warehouse"></i></div><div class="timelineContent"><p><strong>Trin 1: </strong>'+firstlocation[i]+'</p><p>'+firstdate[i]+' - kl. '+firsttime[i]+'</p><p>Forsendelsen behandles og sorteres</p></div><div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div></div><div class="timelineItem"><div class="timelineIcon"><i class="fas fa-plane"></i></div><div class="timelineContent"><p><strong>Trin 2: </strong>'+secondlocation[i]+'</p><p>'+seconddate[i]+' - kl. '+secondtime[i]+'</p><p>Tøjet er ved gøres klar til flyveturen</p></div><div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div></div><div class="timelineItem"><div class="timelineIcon"><i class="fas fa-globe"></i></div><div class="timelineContent"><p><strong>Trin 3: </strong>'+thirdlocation[i]+'</p><p>'+thirddate[i]+' - kl. '+thirdtime[i]+'</p><p>Tøjet er noget frem</p></div><div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div></div>';
 
-    // Opdater DOM'en med den hentede status
-    document.getElementById('status').innerText = status;
-}
-
-function getStatusFromServer(trackingNumber) {
-    // Simulerer en tilfældig status
-    var statuses = ['In Transit', 'Out for Delivery', 'Delivered', 'Failed Delivery Attempt'];
-    var randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
-    return 'Status for tracking number ' + trackingNumber + ': ' + randomStatus;
-}
+        //Viser vores satisfactions box med billed
+        document.getElementById('satisfactionBox').innerHTML = '<h3>Tak for din donation!</h3><p>Her er et billede af dem, der har fået gavn af dit tøj:</p><img src="pictures/map/'+id[i]+'.png" alt="Billed af glade børn">';
+        document.getElementById('satisfactionBox').style.display = 'block';
 
 
-function trackShipment() {
-    var trackingNumber = document.getElementById('trackingNumber').value;
-
-    // Simulere en anmodning til serveren for at få forsendelsesdetaljer
-    if (trackingNumber == id[0]) {
-        document.getElementById('trackingResult').style.display = 'block';
-        // Vis satisfactionBox, når det ønskede sporingsnummer er indtastet
-        document.querySelector('.satisfactionBox').style.display = 'block';
-        // Skjul fejlmeddelelsen, hvis den var synlig tidligere
+        //fjerner fejl boksen i tilfældet at den var der før
         document.getElementById('errorMessage').style.display = 'none';
+        break;
     } else {
+        //fjerner alt fra tracking og satisfactionboxen så det ikke vises og kan ikke tjekes uden korrekt id
+        document.getElementById('trackingResult').innerHTML = '';
+        document.getElementById('satisfactionBox').innerHTML = '';
+
+
         // Vis fejlmeddelelsen, når et forkert sporingsnummer indtastes
         document.getElementById('errorMessage').innerText = 'Ugyldigt forsendelsesnummer. Venligst kontroller og prøv igen.';
         document.getElementById('errorMessage').style.display = 'block';
-        // Skjul satisfactionBox, da det forkerte sporingsnummer blev indtastet
-        document.querySelector('.satisfactionBox').style.display = 'none';
+        
+        // Skjuler satisfactionBox bagrunden, når det forkerte sporingsnummer blev indtastet
+        document.getElementById('satisfactionBox').style.display = 'none';
+        }
     }
 }
