@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="pictures/general/easteregg.png" type="image/icon type">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/stylesgeneral.css">
     <link rel="stylesheet" href="css/stylesabout.css">
     <script src="javascript/javascriptgeneral.js" defer></script> 
-    <script src="javascript/javascript.js" defer></script> 
+    <script src="javascript/javascriptabout.js" defer></script> 
     <meta charset="UTF-8">
     <title>Om os</title>
-    <link rel="icon" href="pictures/general/easteregg.png" type="image/icon type">
 </head>
 <body>
     <main id="banner"></main>
@@ -21,10 +21,9 @@
             <br><br>Vi tror på, at små handlinger kan have stor indflydelse, og vi stræber efter at gøre en forskel i vores lokalsamfund og ud over det. Gennem kreativitet, samarbejde og vedholdenhed søger vi at udfordre status quo og inspirere andre til at handle.
             <br><br>Vi ser frem til at dele vores rejse med dig og opbygge en mere bæredygtig fremtid sammen!</p>
             <div id="picturegallery">
-                <i class="fa-solid fa-chevron-left"  class="arrows"></i>
-                <i class="fa-solid fa-chevron-right" class="arrows"></i>
+                <a id="galleryleft"  onclick="gallerygoleft()"><i class="fa-solid fa-chevron-left"></i></a>
+                <a id="galleryright" onclick="gallerygoright()"><i class="fa-solid fa-chevron-right"></i></a>
             </div>
-            <img src="pictures/about/temporary picture.jpg" alt="" class="uspicture"> 
             <h2 style="grid-area: h2; color: black;">Genbrug</h2>
             <p class="recycletext">her er der 5 linjer tekst om genbrug</p>
             <div class="readmore">

@@ -9,19 +9,33 @@
     "p pc"
     "h2 h2"
     "p2 b" ;
- 
-}
-.uspicture{
-    grid-area: pc;
-    display: block;
-    width: 100%;
 }
 #picturegallery{
- height: 200px;
+    grid-area: pc;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("../pictures/about/0.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-.arrows{
-    font-size: 200px;  
-    height: 200px; 
+.fa-solid.fa-chevron-left, .fa-solid.fa-chevron-right{
+    font-size: 100px;  
+    color: #000000;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.523);
+}
+.fa-solid.fa-chevron-left:hover, .fa-solid.fa-chevron-right:hover{
+    color: #464646;
+    cursor:pointer;
+}
+#picturegallery #galleryleft{
+    margin: auto;
+    margin-left: 30px;
+}
+#picturegallery #galleryright{
+    margin: auto;
+    margin-right: 30px;
 }
 
 .ustext{
