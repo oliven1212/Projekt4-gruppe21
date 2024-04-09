@@ -16,6 +16,14 @@
     display: block;
     width: 100%;
 }
+#picturegallery{
+ height: 200px;
+}
+.arrows{
+    font-size: 200px;  
+    height: 200px; 
+}
+
 .ustext{
      grid-area: p;
      width: 90%;
