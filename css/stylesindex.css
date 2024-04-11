@@ -170,8 +170,8 @@ grid-area: p;
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 2px;
-    margin-left: 5px;
+    margin: 0px;
+    margin-left: 1px;
     padding-bottom: 20%;
 }
 
