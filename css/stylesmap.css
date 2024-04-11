@@ -13,14 +13,27 @@ main input {
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+    grid-area: b;
+    background-color: #E30A0B;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px #e30a0aad;
 }
 button:hover {
-    background-color: #0056b3;
+    background-color: #c90f0f;
+}
+button p{
+    color: white;
 }
 
 #trackingResult {

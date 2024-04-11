@@ -1,5 +1,5 @@
-const uniname = ["Ordrup gymnasium","UCL Erhvers akademi","Makurs plads"];
-const unilocation = ["Kirkevej 5, 2920 Charlottenlund","UCL Erhvers akademi","Makurs plads"];
+const uniname = ["Copenhagen Business School","Dansk teknisk universitet","IT University of Copenhagen","Copenhagen University","Roskilde University","University of Southern Denmark","Aalborg universitet","Aarhus Universitet"];
+const unilocation = ["Solbjerg Pl. 3, 2000 Frederiksberg","Anker Engelunds Vej 1, Bygning 101A, 2800 Kongens Lyngby","Rued Langgaards Vej 7, 2300 København","Nørregade 10, 1172 København","Universitetsvej 1, 4000 Roskilde","Campusvej 55, 5230 Odense","Fredrik Bajers Vej 7K, 9220 Aalborg Øst","Nordre Ringgade 1, 8000 Aarhus C"];
 const eventtime = ["Ordrup gymnasium","UCL Erhvers akademi","Makurs plads"];
 const eventinfo = ["Ordrup gymnasium","UCL Erhvers akademi","Makurs plads"];
 const filename = ["cbs_koebenhavn","dtu_odense","it_universitet_koebenhavn","koebenhavns_universitet","ruc_roskilde","sdu_odense","aalborg_universitet","aarhus_universitet"];
