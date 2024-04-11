@@ -35,6 +35,7 @@ label, button{
     padding: 8px;
     margin: 10px 20px;
     box-shadow: 3px 3px 3px #0000003e;
+    min-width: 250px;
 
 }
 .box img{
