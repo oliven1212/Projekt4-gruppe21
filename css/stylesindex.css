@@ -1,9 +1,17 @@
 
 .list {
-    padding-bottom: 20px;
     margin: auto;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 4px;
+    border-color: #00454e;
     
     
+}
+
+.list:hover {
+    scale: 1.05;
 }
 
 .info p {
