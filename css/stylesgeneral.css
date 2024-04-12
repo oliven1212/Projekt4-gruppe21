@@ -31,8 +31,8 @@ html,body{
 body{
     background-color: #ffffff;
     display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows:  (120px 143px auto 150px);
+    grid-template-columns: auto;
+    grid-template-rows:  120px auto auto auto;
 
     grid-template-areas: 
     "header"
@@ -112,7 +112,7 @@ footer p{
 }
 footer i{
     color: white;
-    scale: 200%;
+    transform: scale(2);
     margin: 20px 18px;
 }
 
@@ -131,7 +131,7 @@ footer i{
     position: absolute;
     right: 3vh;
     top: 6vh;
-    scale: 2;
+    transform: scale(2);
 }
 
 #header .burperpic img {

@@ -51,7 +51,6 @@ label, button{
     background-color: white;
 }
 .box .cover{
-    grid-area: img,text;
     background-color: #fe9216cb;
     padding: 10px;
     margin-left: 100%;
