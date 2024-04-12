@@ -19,7 +19,7 @@ function trackShipment() {
         document.getElementById('trackingResult').innerHTML += '<div class="trackingTimeline"><div class="timelineItem"><div class="timelineIcon"><i class="fas fa-warehouse"></i></div><div class="timelineContent"><p><strong>Trin 1: </strong>'+firstlocation[i]+'</p><p>'+firstdate[i]+' - kl. '+firsttime[i]+'</p><p>Forsendelsen behandles og sorteres</p></div><div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div></div><div class="timelineItem"><div class="timelineIcon"><i class="fas fa-plane"></i></div><div class="timelineContent"><p><strong>Trin 2: </strong>'+secondlocation[i]+'</p><p>'+seconddate[i]+' - kl. '+secondtime[i]+'</p><p>Tøjet er ved gøres klar til flyveturen</p></div><div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div></div><div class="timelineItem"><div class="timelineIcon"><i class="fas fa-globe"></i></div><div class="timelineContent"><p><strong>Trin 3: </strong>'+thirdlocation[i]+'</p><p>'+thirddate[i]+' - kl. '+thirdtime[i]+'</p><p>Tøjet er noget frem</p></div><div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div></div>';
 
         //Viser vores satisfactions box med billed
-        document.getElementById('satisfactionBox').innerHTML = '<h3>Tak for din donation!</h3><p>Her er et billede af dem, der har fået gavn af dit tøj:</p><img src="pictures/map/'+id[i]+'.png" alt="Billed af glade børn">';
+        document.getElementById('satisfactionBox').innerHTML = '<h3>Tak for din donation!</h3><p>Her er et billede af dem, der har fået gavn af dit tøj:</p><img src="pictures/map/'+id[i]+'.jpg" alt="Billed af glade børn">';
         document.getElementById('satisfactionBox').style.display = 'block';
 
 
