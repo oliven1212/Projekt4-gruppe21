@@ -1,29 +1,3 @@
-.track {
-    display: grid;
-    padding-bottom: -10%;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: 
-    "t4 p4"
-    "t4 button";
-}
-
-.track .inf {
-margin: auto;
-width: 90%;
-}
-
-.track .tracktext {
-    margin: auto;
-    margin-top: 50px;
-    line-height: 200%;
-    grid-area: p4;
-    width: 85%;
-}
-.track div{
-    text-align: center;
-}
-
 main h3 {
     color: black;
 }
@@ -32,11 +6,37 @@ main .container {
     text-align: center;
 }
 
-main input {
+.tracky div input {
     padding: 10px;
     margin-bottom: 10px;
 }
 
+main .tracky {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "t p"
+    "t button";
+}
+
+.tracky .inf {
+    grid-area: t;
+    margin: auto;
+    width: 90%;
+}
+
+.tracky .tracktext {
+    grid-area: p;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 200%;
+    width: 85%;
+}
+.tracky div{
+    grid-area: button;
+    text-align: center;
+}
 button {
     grid-area: b;
     background-color: #E30A0B;
