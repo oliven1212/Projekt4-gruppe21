@@ -8,11 +8,11 @@ for (let i = 0; i < uniname.length; i++) {
 document.getElementById("galleri").innerHTML  += '<div class="box"><img src="pictures/events/'+filename[i]+'.jpg" alt="united"><div class="img-text"><h3>'+uniname[i]+'</h3><p>'+unilocation[i]+'</p><p>'+eventtime[i]+'</p></div><div class="cover"><h3>'+uniname[i]+'</h3><p>'+unilocation[i]+'</p><p>'+eventtime[i]+'</p><p>'+eventinfo[i]+'</p></div></div>';
 } 
 
-
 const unilist = ["All","Copenhagen Business School","Dansk teknisk universitet","IT University of Copenhagen","Copenhagen University","Roskilde University","University of Southern Denmark","Aalborg universitet","Aarhus Universitet"];
 for (let i = 0; i < unilist.length; i++) {
     document.getElementById("options").innerHTML += '<option value="' + unilist[i] + '">' + unilist[i] + '</option>';
 }
+
 
 function search(){
     document.getElementById("galleri").innerHTML  = null;
