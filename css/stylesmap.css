@@ -18,12 +18,12 @@ width: 90%;
     margin-top: 50px;
     line-height: 200%;
     grid-area: p4;
+    width: 85%;
 }
 .track div{
     text-align: center;
-    margin-top: -50px;
-
 }
+
 main h3 {
     color: black;
 }
