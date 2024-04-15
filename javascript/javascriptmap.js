@@ -25,6 +25,8 @@ function trackShipment() {
 
         //fjerner fejl boksen i tilfældet at den var der før
         document.getElementById('errorMessage').style.display = 'none';
+
+        document.getElementById('splitline').style.display = 'block';
         break;
     } else {
         //fjerner alt fra tracking og satisfactionboxen så det ikke vises og kan ikke tjekes uden korrekt id
@@ -38,6 +40,9 @@ function trackShipment() {
         
         // Skjuler satisfactionBox bagrunden, når det forkerte sporingsnummer blev indtastet
         document.getElementById('satisfactionBox').style.display = 'none';
+        document.getElementById('splitline').style.display = 'none';
+
+
         }
     }
 }

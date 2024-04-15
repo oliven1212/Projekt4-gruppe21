@@ -1,28 +1,35 @@
 .track {
     display: grid;
     padding-bottom: -10%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: 
-    "t4 p4";
+    "t4 p4"
+    "t4 button";
 }
 
-.inf {
+.track .inf {
 margin: auto;
+width: 90%;
 }
 
-.track p {
+.track .tracktext {
     margin: auto;
-    line-height: 150%;
+    margin-top: 50px;
+    line-height: 200%;
+    grid-area: p4;
 }
+.track div{
+    text-align: center;
+    margin-top: -50px;
 
+}
 main h3 {
     color: black;
 }
 
 main .container {
     text-align: center;
-    margin-top: 50px;
 }
 
 main input {
@@ -152,4 +159,14 @@ button p{
     max-width: 300px; /* Begræns maksimal bredde */
     margin-left: auto; /* Centrer på x-aksen */
     margin-right: auto; /* Centrer på x-aksen */
+}
+
+#splitline{
+    display: none;
+    margin: 60px auto;
+    width: 60%; 
+    border-width: 3px;
+    border-style: solid;
+    border-color: #00454e;
+    border-radius: 5px;
 }
