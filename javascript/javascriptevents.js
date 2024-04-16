@@ -3,6 +3,9 @@ const unilocation = ["Solbjerg Pl. 3, 2000 Frederiksberg","Anker Engelunds Vej 1
 const eventtime = ["21/02-2024 til 28/02-2024","02/01-2024 til 09/01-2024","21/04-2024 til 28/04-2024", "21/05-2024 til 28/05-2024","21/06-2024 til 28/06-2024","21/07-2024 til 28/07-2024","21/08-2024 til 28/08-2024", "21/09-2024 til 28/09-2024"];
 const eventinfo = ["Container placeret i bygning C reception","Container placeret i lokale A3.52","Container placeret i bygning C reception","Container placeret i lokale A3.52","Container placeret i bygning C reception","Container placeret i lokale A3.52","Container placeret i bygning C reception","Container placeret i lokale A3.52"];
 const filename = ["cbs_koebenhavn","dtu_lyngby","cbs_koebenhavn","koebenhavns_universitet","ruc_roskilde","sdu_odense","aalborg_universitet","aarhus_universitet"];
+const fakearray = ["steve"];
+fakearray.push("steve2");
+console.log(fakearray)
 
 for (let i = 0; i < uniname.length; i++) {
 document.getElementById("galleri").innerHTML  += '<div class="box"><img src="pictures/events/'+filename[i]+'.jpg" alt="united"><div class="img-text"><h3>'+uniname[i]+'</h3><p>'+unilocation[i]+'</p><p>'+eventtime[i]+'</p></div><div class="cover"><h3>'+uniname[i]+'</h3><p>'+unilocation[i]+'</p><p>'+eventtime[i]+'</p><p>'+eventinfo[i]+'</p></div></div>';
