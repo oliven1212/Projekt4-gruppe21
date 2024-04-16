@@ -114,3 +114,12 @@ grid-area: p;
 }
 
 }
+
+.rede {
+    width:auto;
+    height: 50px;
+    opacity: 45%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+}

@@ -97,3 +97,12 @@ color: white;
 .box:hover .cover{
     margin-left: 0%;
 }
+
+.rede {
+    width:auto;
+    height: 50px;
+    opacity: 45%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+}

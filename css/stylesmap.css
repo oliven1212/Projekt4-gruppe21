@@ -170,3 +170,12 @@ button p{
     border-color: #00454e;
     border-radius: 5px;
 }
+
+.rede {
+    width:auto;
+    height: 50px;
+    opacity: 45%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+}
