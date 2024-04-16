@@ -210,3 +210,14 @@ grid-area: p;
     padding-bottom: 20%;
 }
 
+.plak {
+    background-size: cover;
+    min-height: 200px;
+    margin: auto;
+    display: flex;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #00454e;
+    border-width: 5px;
+
+}
