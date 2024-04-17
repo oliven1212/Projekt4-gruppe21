@@ -10,14 +10,28 @@
     "line line"
     "vid vid" ;
 }
+@media(max-width: 1000px){
+    .about-us{
+        grid-template-columns: 100%;
+        grid-template-rows:  repeat(5, auto);
+        grid-template-areas: 
+        "h1"
+        "p"
+        "pc"
+        "line"
+        "vid" ;
+        
+    }
+}
 #picturegallery{
     grid-area: pc;
     display: flex;
     width: 100%;
     height: 100%;
+    min-height: 400px;
     background-image: url("../pictures/about/0.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:  contain;
     background-position: center;
 }
 .fa-solid.fa-chevron-left, .fa-solid.fa-chevron-right{
@@ -105,12 +119,15 @@ grid-area: p;
         grid-template-columns: repeat(1, auto);
         grid-template-rows:  repeat(3, auto);
         grid-template-areas: 
-        "p"
         "t"
+        "p"
         "t2";
     }
 .text2 {
     margin-right: auto;
+}
+.container2 .text2{
+margin-top: 50px;
 }
 
 }

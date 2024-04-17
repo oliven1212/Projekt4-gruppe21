@@ -36,6 +36,19 @@ label, button{
     border-radius: 5px;
     border-color: #00454e;
 }
+@media(max-width: 1000px){
+    .eventcontainer{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "img"
+        "text";
+    }
+    .eventcontainer img{
+    width: 100%;
+    }
+    }
+
 .eventcontainer p{
     grid-area: text;
     width: 90%; 
