@@ -15,7 +15,7 @@ function trackShipment() {
     if (document.getElementById('trackingNumber').value == id[i]){
 
         //Viser hvor langt containeren er på dens rejse
-        document.getElementById('trackingResult').innerHTML = '<h3>Pakkens Vej</h3><br>';
+        document.getElementById('trackingResult').innerHTML  = '<h3>Pakkens Vej</h3><br>';
         document.getElementById('trackingResult').innerHTML += '<div class="trackingTimeline"><div class="timelineItem"><div class="timelineIcon"><i class="fas fa-warehouse"></i></div><div class="timelineContent"><p><strong>Trin 1: </strong>'+firstlocation[i]+'</p><p>'+firstdate[i]+' - kl. '+firsttime[i]+'</p><p>Forsendelsen behandles og sorteres</p></div><div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div></div><div class="timelineItem"><div class="timelineIcon"><i class="fas fa-plane"></i></div><div class="timelineContent"><p><strong>Trin 2: </strong>'+secondlocation[i]+'</p><p>'+seconddate[i]+' - kl. '+secondtime[i]+'</p><p>Tøjet er ved gøres klar til flyveturen</p></div><div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div></div><div class="timelineItem"><div class="timelineIcon"><i class="fas fa-globe"></i></div><div class="timelineContent"><p><strong>Trin 3: </strong>'+thirdlocation[i]+'</p><p>'+thirddate[i]+' - kl. '+thirdtime[i]+'</p><p>Tøjet er noget frem</p></div><div class="checkmarkIcon"><i class="fas fa-check-circle"></i></div></div>';
 
         //Viser vores satisfactions box med billed

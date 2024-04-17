@@ -5,7 +5,7 @@ const eventinfo = ["Container placeret i bygning C reception","Container placere
 const filename = ["cbs_koebenhavn","dtu_lyngby","cbs_koebenhavn","koebenhavns_universitet","ruc_roskilde","sdu_odense","aalborg_universitet","aarhus_universitet"];
 const fakearray = ["steve"];
 fakearray.push("steve2");
-console.log(fakearray)
+console.log(fakearray);
 
 for (let i = 0; i < uniname.length; i++) {
 document.getElementById("galleri").innerHTML  += '<div class="box"><img src="pictures/events/'+filename[i]+'.jpg" alt="united"><div class="img-text"><h3>'+uniname[i]+'</h3><p>'+unilocation[i]+'</p><p>'+eventtime[i]+'</p></div><div class="cover"><h3>'+uniname[i]+'</h3><p>'+unilocation[i]+'</p><p>'+eventtime[i]+'</p><p>'+eventinfo[i]+'</p></div></div>';
