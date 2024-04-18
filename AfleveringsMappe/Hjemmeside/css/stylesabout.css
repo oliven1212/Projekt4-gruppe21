@@ -1,0 +1,142 @@
+.about-us{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows:  repeat(4, auto);
+    grid-gap: 3px;
+
+    grid-template-areas: 
+    "h1 h1"
+    "p pc"
+    "line line"
+    "vid vid" ;
+}
+@media(max-width: 1000px){
+    .about-us{
+        grid-template-columns: 100%;
+        grid-template-rows:  repeat(5, auto);
+        grid-template-areas: 
+        "h1"
+        "p"
+        "pc"
+        "line"
+        "vid" ;
+        
+    }
+}
+#picturegallery{
+    grid-area: pc;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background-image: url("../pictures/about/0.jpg");
+    background-repeat: no-repeat;
+    background-size:  contain;
+    background-position: center;
+}
+.fa-solid.fa-chevron-left, .fa-solid.fa-chevron-right{
+    font-size: 100px;  
+    color: #000000;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.523);
+}
+.fa-solid.fa-chevron-left:hover, .fa-solid.fa-chevron-right:hover{
+    color: #464646;
+    cursor:pointer;
+}
+#picturegallery #galleryleft{
+    margin: auto;
+    margin-left: 30px;
+}
+#picturegallery #galleryright{
+    margin: auto;
+    margin-right: 30px;
+}
+
+.ustext{
+     grid-area: p;
+     width: 90%;
+}
+.recycletext{
+    grid-area: p2;
+}
+.readmore{
+    grid-area: b;
+    background-color: red;
+}
+
+.splitline{
+    grid-area: line;
+    margin: 80px auto;
+    width: 60%; 
+    border-width: 3px;
+    border-style: solid;
+    border-color: #00454e;
+    border-radius: 5px;
+}
+.container2 {
+    grid-area: vid;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  repeat(2, 50%);
+    grid-gap: 0px;
+
+    grid-template-areas: 
+    "t p"
+    "t2 p";
+}
+.container2 video{
+    margin: auto;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 5px;
+    border-color: #00454e;
+}
+#support {
+grid-area: p;
+}
+
+.text2 {
+    grid-area:t2;
+    display: flex;
+    margin: 5px;
+    margin-right: 10%;
+    margin-top: -15%;
+    line-height: 135%;
+}
+
+.hline2 {
+    grid-area:t ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    margin-left: 1px;
+    padding-bottom: 20%;
+}
+
+@media(max-width: 1000px){
+    .container2 {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows:  repeat(3, auto);
+        grid-template-areas: 
+        "t"
+        "p"
+        "t2";
+    }
+.text2 {
+    margin-right: auto;
+}
+.container2 .text2{
+margin-top: 50px;
+}
+
+}
+
+.rede {
+    width:auto;
+    height: 50px;
+    opacity: 45%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+}

@@ -1,0 +1,181 @@
+main h3 {
+    color: black;
+}
+
+main .container {
+    text-align: center;
+}
+
+.tracky div input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+main .tracky {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "t p"
+    "t button";
+}
+
+.tracky .inf {
+    grid-area: t;
+    margin: auto;
+    width: 90%;
+}
+
+.tracky .tracktext {
+    grid-area: p;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 200%;
+    width: 85%;
+}
+.tracky div{
+    grid-area: button;
+    text-align: center;
+}
+button {
+    grid-area: b;
+    background-color: #E30A0B;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px #e30a0aad;
+}
+button:hover {
+    background-color: #c90f0f;
+}
+button p{
+    color: white;
+}
+.knap {
+    grid-area: b;
+    background-color: #E30A0B;
+    margin: auto;
+    padding: 5px;
+    text-decoration: none;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px #e30a0aad;
+}
+.knap:hover{
+    background-color: #c90f0f;
+    cursor: pointer;
+
+}
+.knap p{
+    color: white;
+}
+
+#trackingResult {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trackingTimeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timelineItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9; /* Let grå baggrundsfarve */
+}
+
+.timelineIcon {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.checkmarkIcon {
+    margin-left: auto;
+    font-size: 24px;
+    color: #00cc00;
+}
+
+.timelineContent {
+    max-width: 300px;
+}
+
+.timelineContent p {
+    margin: 5px 0;
+}
+
+#satisfactionBox {
+    display: none;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#satisfactionBox h3 {
+    margin-bottom: 10px;
+}
+
+#satisfactionBox img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#errorMessage {
+    display: none;
+    background-color: #ffcccc; /* Lyserød baggrundsfarve */
+    border: 2px solid #ff4d4d; /* Tykkere rød ramme */
+    color: #ff4d4d; /* Mørkere rød tekstfarve */
+    padding: 20px; /* Øget indvendig polstring */
+    border-radius: 10px; /* Mere afrundede kanter */
+    margin-top: 20px; /* Lidt større afstand til andre elementer */
+    text-align: center; /* Juster tekst til centrum */
+    font-family: Arial, sans-serif; /* Skrifttype */
+    max-width: 300px; /* Begræns maksimal bredde */
+    margin-left: auto; /* Centrer på x-aksen */
+    margin-right: auto; /* Centrer på x-aksen */
+}
+
+#splitline{
+    display: none;
+    margin: 60px auto;
+    width: 60%; 
+    border-width: 3px;
+    border-style: solid;
+    border-color: #00454e;
+    border-radius: 5px;
+}
+
+.rede {
+    width:auto;
+    height: 50px;
+    opacity: 45%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+}

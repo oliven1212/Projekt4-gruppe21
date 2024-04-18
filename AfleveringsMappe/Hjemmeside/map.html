@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <script src="javascript/javascriptgeneral.js" defer></script> 
+    <script src="javascript/javascriptmap.js" defer></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="icon" href="pictures/general/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/stylesgeneral.css">
+    <link rel="stylesheet" href="css/stylesmap.css">
+</head>
+<body>
+    <div id="banner"></div>
+    <header id="header"></header>
+    <main>
+        <div class="tracky">
+            <p class="tracktext">Track din container og dens rejse ved at indtaste ID'et på vores tracking side. Følg hurtigt og nemt containerens placering og vejen til destinationen. 
+                På vores tracking side kan du også få opdateringer om forventet ankomsttid, eventuelle forsinkelser 
+                og andre vigtige oplysninger om din forsendelse.</p>
+            <img class="inf" src="pictures/map/inf.jpg">
+            <div>
+                <h2>Track din container</h2>
+                <input type="text" id="trackingNumber" placeholder="Enter Tracking Number">
+                <a onclick="trackShipment()" class="knap"><p>Track</p></a>
+            </div>
+        </div>
+        <div class="container">
+            <hr id="splitline">
+
+
+            <div id="status"></div>
+            <!-- Meddelelsescontainer -->
+            <div id="errorMessage" class="error-message"></div>
+    
+        <div id="trackingResult">
+
+        </div>
+        <div id="satisfactionBox">
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+<img class="rede" src="pictures/index/red.gif" alt="">
+    </main>
+    <footer id="footer"></footer>
+</body>
+</html>

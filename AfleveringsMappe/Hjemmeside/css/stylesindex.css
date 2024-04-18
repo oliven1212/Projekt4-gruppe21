@@ -1,0 +1,232 @@
+
+.list {
+    margin: auto;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 4px;
+    border-color: #00454e;
+    width: 80%;
+    height: 90%;
+    
+}
+.list img{
+    width: 100%;
+    height: 100%;
+}
+
+.list:hover {
+transform: scale(1.05);
+}
+
+.info p {
+    margin: auto;
+    margin-top: 0px;
+    width: 80%;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "t1 t2 t3"
+    "p1 p2 p3";
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  repeat(3, auto);
+    grid-gap: 0px;
+    margin: 45px;
+
+    grid-template-areas: 
+    "p t"
+    "p t2"
+    "p b" ;
+}
+.hline {
+    grid-area:t ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    margin-left: 30px;
+}
+.text {
+    grid-area:t2 ;
+    margin: 5px;
+    margin-left: 40px;
+    line-height: 135%;
+}
+@media(max-width: 1000px){
+    .container {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows:  repeat(4, auto);
+        grid-template-areas: 
+        "p"
+        "t"
+        "t2"
+        "b" ;
+    }
+    .text {
+        grid-area:t2 ;
+        margin: 5px;
+        line-height: 135%;
+    }
+
+}
+.frontvideo {
+    grid-area: p;
+    margin: auto;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 5px;
+    border-color: #00454e;
+}
+
+
+
+.knap {
+    grid-area: b;
+    background-color: #E30A0B;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px #e30a0aad;
+}
+.knap:hover{
+    background-color: #c90f0f;
+
+}
+.knap p{
+    color: white;
+}
+
+.splitline{
+    margin: 80px auto;
+    width: 60%; 
+    border-width: 3px;
+    border-style: solid;
+    border-color: #00454e;
+    border-radius: 5px;
+}
+
+.kortcontainer h1, .songcontainer h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.kortcontainer .mapbanner {
+    height: 338px;
+    width: 1236px;
+    margin: auto;
+
+    background: url("../pictures/index/animationlarge.png") 0 0 no-repeat;
+    animation: bannermapbig 2.3s steps(17) infinite;
+}
+@keyframes bannermapbig {
+    0%{background-position: 0px;}
+    100%{background-position: -21012px;}
+}
+@media(max-width: 1300px){
+    .kortcontainer .mapbanner{
+        height: 169px;
+        width: 618px;
+        background: url("../pictures/index/animationmedium.png") 0 0 no-repeat;
+        animation: bannermapmed 2.3s steps(17) infinite;
+    }
+    @keyframes bannermapmed {
+        0%{background-position: 0px;}
+        100%{background-position: -10506px;}
+    }
+}
+@media(max-width: 650px){
+    .kortcontainer .mapbanner{
+        height: 84.5px;
+        width: 309px;
+        background: url("../pictures/index/animationsmall.png") 0 0 no-repeat;
+        animation: bannermapsma 2.3s steps(17) infinite;
+    }
+    @keyframes bannermapsma {
+        0%{background-position: 0px;}
+        100%{background-position: -5253px;}
+    }
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  repeat(2, 50%);
+    grid-gap: 0px;
+    margin: 50px;
+
+    grid-template-areas: 
+    "t p"
+    "t2 p";
+}
+
+#support {
+grid-area: p;
+}
+.text2 {
+    grid-area:t2;
+    display: flex;
+    margin: 5px;
+    margin-right: 10%;
+    margin-top: -15%;
+    line-height: 135%;
+
+}
+@media(max-width: 1000px){
+    .container2 {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows:  repeat(3, auto);
+        grid-template-areas: 
+        "p"
+        "t"
+        "t2";
+    }
+.text2 {
+    margin-right: auto;
+}
+
+}
+.hline2 {
+    grid-area:t ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    margin-left: 1px;
+    padding-bottom: 20%;
+}
+
+.plak {
+    background-size: cover;
+    min-height: 200px;
+    margin: auto;
+    display: flex;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #00454e;
+    border-width: 5px;
+
+}
+
+.rede {
+    width:auto;
+    height: 50px;
+    opacity: 45%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+}

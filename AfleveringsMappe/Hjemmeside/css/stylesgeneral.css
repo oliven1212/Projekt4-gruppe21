@@ -1,0 +1,162 @@
+h1{
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin: 0px;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #868784;
+}
+h3{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin: 0px;
+}
+h1,h2,h3{
+    letter-spacing: -1.5px;
+}
+p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #585e57;
+}
+
+html,body{
+    height: 100%;
+    margin: 0px;
+}
+body{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:  120px auto auto auto;
+
+    grid-template-areas: 
+    "header"
+    "banner"
+    "main"
+    "footer";
+}
+main{
+    grid-area: main;
+    margin: 20px 3%;
+}
+#banner{
+    grid-area: banner;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 30px;
+    align-items: center;
+
+}
+#banner img{
+    width: 100%;
+}
+header{
+    grid-area: header;
+    background-color: #00454e;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 120px;
+    width: 100%;
+}
+.highlight{
+    width: 15%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.highlight:hover{
+    margin-top: 5px;
+    border-bottom: 5px solid #ff1504de;
+}
+.highlight p{
+    text-align: center;
+    font-size: 30px;
+    color: #f5ebd8;
+}
+.headerpicture {
+    width: 15%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 0px;
+    padding: 10px 0px;
+}
+.headerpicture img{
+    height: 100px;
+
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background-color: #00454e;
+    padding: 20px;
+}
+footer h2{
+    color: #fe9016;
+}
+footer div{
+    justify-content: center;
+}
+footer p{
+    color: white
+}
+footer i{
+    color: white;
+    transform: scale(2);
+    margin: 20px 18px;
+}
+
+.burger {
+    display:block;
+    position: absolute;
+    background-color: #00454e;
+    padding: 10px;
+    border-radius: 5px;
+    right: 0px;
+    top: 120px;
+
+}
+#header .navbarbutton{
+    display: block;
+    position: absolute;
+    right: 3vh;
+    top: 6vh;
+    transform: scale(2);
+}
+
+#header .burperpic img {
+    display: block;
+    height: 80px;
+}
+.burger a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: end;
+}
+.fa-bars {
+    color: #f5ebd8; /* Farve på hamburger-menu-ikonet */
+}
+
+.burgeritem {
+    background-color: #00454e; /* Baggrundsfarve til burger-menu */
+    color: #f5ebd8; /* Farve på menu-elementer */
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.burgeritem:hover {
+    background-color: #393D3F; /* Farveændring ved hover */
+}
